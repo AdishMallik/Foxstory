@@ -5,7 +5,7 @@ from collections import OrderedDict
 import matplotlib.pyplot as plt
 from urlparse import urlparse
 
-#PMethod to parse the URL
+#Method to parse the URL
 def parse(url):
    try:
        parse_url = urlparse(url) 
