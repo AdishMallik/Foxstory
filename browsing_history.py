@@ -64,11 +64,11 @@ sites_count = {}
 
 #Calculate the count for each site
 for url, count in results:
-      url = parse(url) 
-         if url in sites_count:
-            sites_count[url] += 1
-         else:
-            sites_count[url] = 1 
+  url = parse(url) 
+    if url in sites_count:
+      sites_count[url] += 1
+    else:
+      sites_count[url] = 1 
 	
 	
 sites_count_sorted = OrderedDict(sorted(sites_count.items(), key=operator.itemgetter(1), reverse=True)[:10])#Statement to sort and find the top 10 visited sites
